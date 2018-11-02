@@ -17,8 +17,8 @@ public class Main {
         Client client = new Client(API_KEY);
 
         client.sendMessage(
-                "noresponder@dominio",
-                "enviara@asd.com",
+                "",
+                "",
                 "Probando",
                 "Hola Mundo desde SparkPost",
                 "<b>Hola Mundo desde SparkPost</b>");
