@@ -1,11 +1,14 @@
-group 'edu.pucmm.ia'
+plugins {
+    id 'java'
+    id 'application'
+    id 'com.github.johnrengelman.shadow' version '5.2.0'
+}
+
+group 'edu.pucmm.eict'
 version '1.0-SNAPSHOT'
 
-apply plugin: 'java'
-apply plugin: 'application'
-
-sourceCompatibility = 1.8
-mainClassName = "edu.pucmm.mt.Main"
+mainClassName='edu.pucmm.mt.Main'
+sourceCompatibility = 11
 
 repositories {
     mavenCentral()
@@ -13,5 +16,7 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
-    compile "com.sparkpost:sparkpost-lib:0.21"
+    compile "org.simplejavamail:simple-java-mail:6.0.5"
+    compile "com.j2html:j2html:1.4.0"
+    compile "org.slf4j:slf4j-simple:1.7.28"
 }
